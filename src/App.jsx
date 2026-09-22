@@ -136,7 +136,7 @@ function Projects() {
       <header className="page-intro">
         <p className="terminal-label">catalogue / 03</p>
         <h1 className="page-title">projects</h1>
-        <p className="intro-copy">Research, local-first developer tools, systems software, and hackathon builds.</p>
+        <p className="intro-copy">Things I've built!</p>
       </header>
       <section className="project-catalogue" aria-label="Projects">
         {projects.map((project, index) => <ProjectCard project={project} index={index + 1} key={project.name} />)}

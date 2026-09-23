@@ -1,8 +1,13 @@
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import PatchNotesList from '../components/PatchNotesList'
 import Shell from '../components/Shell'
 
 export default function PatchNotes() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <Shell page="patch-notes">
       <header className="page-intro">

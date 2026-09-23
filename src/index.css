@@ -111,6 +111,15 @@ a:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 3px; }
 
 @media (hover: hover) and (pointer: fine) { .command-home:hover, .command-link:hover, .project-link:hover, .patch-notes-link:hover { color: var(--color-accent); text-decoration: underline; } .terminal-contact:hover { border-color: var(--color-accent); color: var(--color-accent); } }
 .command-home:active, .command-link:active, .project-link:active, .terminal-contact:active, .patch-notes-link:active { transform: translateY(1px); }
+@media (max-width: 39.99rem) {
+  .site-header { padding-block-start: var(--space-sm); }
+  .site-nav { flex-wrap: nowrap; padding-block-end: var(--space-xs); }
+  .command-home, .nav-commands .command-link { display: inline-flex; min-height: 2.75rem; align-items: center; line-height: 1; }
+  .command-caret { display: none; }
+  .nav-commands { min-width: 0; flex: 1 1 auto; flex-wrap: nowrap; align-items: center; justify-content: flex-end; gap: var(--space-2xs); }
+  .terminal-contact--email { display: none; }
+  .page-shell { padding-block-start: calc(var(--space-lg) + var(--space-2xs)); }
+}
 @media (min-width: 40rem) { .site-nav { gap: var(--space-sm); } .project-record { grid-template-columns: minmax(0, 5rem) minmax(0, 1fr); gap: var(--space-xl); } }
 @media (min-width: 48rem) { .about-intro-layout { grid-template-columns: minmax(0, 1fr) minmax(16rem, 23rem); align-items: start; } .portrait-record { width: 100%; } }
 @media (prefers-reduced-motion: no-preference) { .command-caret { animation: caret-blink 1s steps(2, start) infinite; } .footer-prompt { animation: caret-blink 1s steps(2, start) infinite; } }

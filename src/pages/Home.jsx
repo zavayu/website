@@ -22,7 +22,7 @@ export default function Home() {
         </div>
         <nav className="contact-strip" aria-label="Contact links">
           {homeLinks.map(({ label, icon, href }) => (
-            <a className="terminal-contact" href={href} key={label} aria-label={label}>
+            <a className={`terminal-contact${label === 'Email' ? ' terminal-contact--email' : ''}`} href={href} key={label} aria-label={label}>
               <span className="terminal-icon" aria-hidden="true">{icon}</span>
               <span>{label}</span>
             </a>

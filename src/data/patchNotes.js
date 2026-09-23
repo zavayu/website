@@ -17,12 +17,12 @@ export const patchNotes = [
   {
     version: 'v0.1.4',
     date: '2026-09-13',
-    note: 'I just got back from visiting Palo Alto, California for an event. I saw a robot dog which was cool.',
+    note: 'I flew to Palo Alto, California this weekend for an event I was invited to. I saw a robot dog which was cool.',
   },
   {
     version: 'v0.1.3',
     date: '2026-09-04',
-    note: 'My internship at Oracle ended today. I learned a lot and had a great time, but I\'m happy to be back at school.',
+    note: 'My internship at Oracle ended today. I learned a lot and had a great time, but I\'m ready to go back to school.',
   },
   {
     version: 'v0.1.2',
@@ -32,7 +32,7 @@ export const patchNotes = [
   {
     version: 'v0.1.0',
     date: '2026-08-13',
-    note: 'I drove toPedernales Falls to view a meteor shower tonight. With the new moon and clear skies I could see so much!',
+    note: 'I drove to Pedernales Falls to view a meteor shower tonight. With the new moon and clear skies I could see so much!',
   },
 
 ]
